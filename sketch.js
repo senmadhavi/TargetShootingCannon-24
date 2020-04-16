@@ -6,7 +6,7 @@ var angle = 0
 var canonBall;
 var shot;
 var ground;
-var ball_1, ball_2, ball_3
+var ball1, ball2, ball3
 var launcherX, launcherY;
 var flag = "start"
 
@@ -17,9 +17,9 @@ function setup() {
     ground = new Ground(width / 2, height - 10, width, 30);
     tanker = new Tanker(75, height - 110, 60, 30);
 
-    ball_1 = new Ball(400, 50, 20)
-    ball_2 = new Ball(500, 100, 20)
-    ball_3 = new Ball(600, 150, 20)
+    ball1 = new Ball(400, 50, 20)
+    ball2 = new Ball(500, 100, 20)
+    ball3 = new Ball(600, 150, 20)
 
     canonBall = new CanonBall(20, 20);
 
@@ -31,9 +31,9 @@ function draw() {
     background(255)
     Matter.Engine.update(engine);
     ground.display()
-    ball_2.display()
-    ball_1.display()
-    ball_3.display();
+    ball2.display()
+    ball1.display()
+    ball3.display();
     canonBall.display();
     tanker.display();
     shot.display();
